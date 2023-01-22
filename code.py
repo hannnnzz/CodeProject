@@ -49,6 +49,10 @@ while True:
                         bayar = int(input("Masukkan jumlah pembayaran: "))
                         if bayar < total_harga:
                             print("Uang yang dibayar kurang.")
+                            kembalian = bayar - total_harga
+                        elif bayar == total_harga:
+                            print("Uang yang dibayar pas.")
+                            kembalian = bayar - total_harga
                         else:
                             kembalian = bayar - total_harga
                         print("Struk Pemesanan:")
